@@ -1,65 +1,68 @@
 package Desafios;
 
 import java.util.Scanner;
-import java.util.SortedMap;
 
 public class CadastroDeNinjas {
     public static void main(String[] args) {
-        /*Menu*/
-        System.out.println("\n===== Menu Ninja =====");
-        System.out.println("1. Cadastrar Ninja");
-        System.out.println("2. Listar Ninjas");
-        System.out.println("3. Sair");
-        System.out.print("Escolha uma opção: ");
-
         /*Scanner*/
         Scanner textBox = new Scanner(System.in);
 
-        int menu = textBox.nextInt();
-        textBox.nextLine();
 
-        switch (menu) {
-            case 1:
-                String[] nomeNinja = new String[1];
-                String[] aldeia = new String[1];
-                System.out.println(" ");
-                System.out.println("-Cadastro de Ninjas-");
-                System.out.print("Digite o nome do ninja: ");
-                String cadastroNinja = textBox.nextLine();
-                nomeNinja[0] = cadastroNinja;
-                System.out.print("Qual a aldeia do ninja: ");
-                String aldeiaNinja = textBox.nextLine();
-                aldeia[0] = aldeiaNinja;
-                System.out.println(nomeNinja[0]);
-                System.out.println(aldeia[0]);
+        /*Array dos Ninjas*/
+        int numeroNinjas = 10;
+        String[] ninjas = new String[numeroNinjas];
 
-            break;
-            case 2:
-                System.out.println("-Lista de Ninjas-");
-                for (int i = 0; i < 1; i++) {
-                    System.out.println(nomeNinja[0]);
-                }
+        //Contadores
+        int ninjasCadastrados = 0;
+        int opcoes = 0;
+
+
+
+        while (opcoes != 3) {
+            /*Menu*/
+            System.out.println("\n===== Menu Ninja =====");
+            System.out.println("1. Cadastrar Ninja");
+            System.out.println("2. Listar Ninjas");
+            System.out.println("3. Sair");
+            System.out.print("Escolha uma opção: ");
+            opcoes = textBox.nextInt();
+            textBox.nextLine();
+
+            switch (opcoes) {
+                case 1:
+                    if (ninjasCadastrados < numeroNinjas) {
+                        System.out.print("Digite o nome do Ninja: ");
+                        String nomeNinja = textBox.nextLine();
+                        ninjas[ninjasCadastrados] = nomeNinja;
+                        ninjasCadastrados++;
+                        System.out.println("O ninja " + nomeNinja + " foi cadastrado com sucesso.");
+                        System.out.println(" ");
+                    } else {
+                        System.out.println("Número máximo de cadastro alcançados, tente novamente mais tarde!");
+                    }
+                    break;
+
+                case 2:
+                    if (ninjasCadastrados == 0) {
+                        System.out.println("Nenhum ninja encontrado.");
+                    } else {
+                        System.out.println("--------- Lista de Ninjas ---------");
+                        for (int i = 0; i < ninjas.length; i++) {
+                            System.out.println(ninjas[i]);
+                        }
+                break;}
+
+                        case 3:
+                            System.out.println("Estamos encerrando o programa...");
+                            break;
+
+                        default :
+                            System.out.println("Opção Inválida");
+                            break;
+            }
+
         }
 
-        /*if (menu == 1) {
-            String[] nomeNinja = new String[1];
-            String[] aldeia = new String[1];
-            System.out.println(" ");
-            System.out.println("-Cadastro de Ninjas-");
-            System.out.print("Digite o nome do ninja: ");
-            String cadastroNinja = textBox.nextLine();
-            nomeNinja[0] = cadastroNinja;
-            System.out.print("Qual a aldeia do ninja: ");
-            String aldeiaNinja = textBox.nextLine();
-            aldeia[0] = aldeiaNinja;
-        } else if (menu == 2) {
-
-            System.out.println("-Lista de Ninjas-");
-
-
-        }*/
-
-
         textBox.close();
+        }
     }
-}

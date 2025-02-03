@@ -1,6 +1,4 @@
-package Desafios;
-
-import jdk.jshell.Snippet;
+package NivelBasico.Desafios;
 
 public class MissoesNinja {
     public static void main(String[] args) {

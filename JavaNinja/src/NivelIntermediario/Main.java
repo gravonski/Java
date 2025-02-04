@@ -3,20 +3,28 @@ package NivelIntermediario;
 public class Main {
     public static void main(String[] args) {
 
-        Ninja naruto = new Ninja();
+        Uzumaki naruto = new Uzumaki();
         naruto.nome = "Naruto Uzumaki";
         naruto.aldeia = "Aldeia da Folha";
-        naruto.idade = 18;
+        naruto.idade = 17;
+        naruto.ModoSabio();
 
-        Ninja sasuke = new Ninja();
+        Uchiha sasuke = new Uchiha();
         sasuke.nome = "Sasuke Uchiha";
         sasuke.aldeia = "Aldeia da Folha";
-        sasuke.idade = 17;
-
-        int quantoTempoFaltaProHogake = sasuke.anosParaSerHogake(50);
+        sasuke.idade = 19;
         sasuke.SharinganAtivado();
-        String chamaMetodo = naruto.Saudacao();
-        System.out.println("O ninja " + sasuke.nome + " tem " + sasuke.idade + " anos e faltam " + quantoTempoFaltaProHogake + " anos para ser um Hogake");
-        System.out.println(chamaMetodo);
+
+        Haruno sakura = new Haruno();
+        sakura.nome = "Sakura Haruno";
+        sakura.aldeia = "Aldeia da Folha";
+        sakura.idade = 18;
+        sakura.Cura();
+
+        Hyuga hinata = new Hyuga();
+        hinata.nome = "Hinata Hyuga";
+        hinata.aldeia = "Aldeia da Folha";
+        hinata.idade = 16;
+        hinata.ChakraDoFogo();
     }
 }

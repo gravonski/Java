@@ -16,4 +16,5 @@ public class Hogakes {
         this.vivoOuMorto = vivoOuMorto;
     }
 
+
 }

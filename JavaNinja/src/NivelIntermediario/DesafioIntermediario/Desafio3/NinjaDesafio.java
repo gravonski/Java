@@ -1,6 +1,4 @@
-package NivelIntermediario.DesafioIntermediario;
-
-import DesafioIntermediario.Uchiha;
+package NivelIntermediario.DesafioIntermediario.Desafio3;
 
 public class NinjaDesafio {
     String nome;

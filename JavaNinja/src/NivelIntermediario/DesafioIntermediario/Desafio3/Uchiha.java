@@ -1,6 +1,4 @@
-package NivelIntermediario.DesafioIntermediario;
-
-import DesafioIntermediario.Ninja;
+package NivelIntermediario.DesafioIntermediario.Desafio3;
 
 public class Uchiha extends NinjaDesafio {
     String habilidadeEspecial;

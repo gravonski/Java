@@ -1,6 +1,4 @@
-package NivelIntermediario.DesafioIntermediario;
-
-import DesafioIntermediario.Ninja;
+package NivelIntermediario.DesafioIntermediario.Desafio3;
 
 public class Main {
     public static void main(String[] args) {

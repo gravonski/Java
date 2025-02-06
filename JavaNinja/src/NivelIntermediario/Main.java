@@ -3,10 +3,9 @@ package NivelIntermediario;
 public class Main {
     public static void main(String[] args) {
 
-        Hogakes Hashirama = new Hogakes("Hashirama", 77, true);
-        Hogakes Tobirama = new Hogakes("Tobirama Senju", 49, true);
-        Hogakes Hiruzen = new Hogakes("Hiruzen", 40, false);
+        Senju Hashirama = new Senju();
 
-        System.out.println(Hashirama.nome);
+
+        Hashirama.sabedoriaHogake();
     }
 }

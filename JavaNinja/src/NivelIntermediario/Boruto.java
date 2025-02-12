@@ -1,6 +1,6 @@
 package NivelIntermediario;
 
-public class Boruto extends Uzumaki implements HyugaUzumaki {
+public class Boruto implements HyugaUzumaki {
     public void AtivarKarma() {
         System.out.println("O Karma foi ativo!");
     }

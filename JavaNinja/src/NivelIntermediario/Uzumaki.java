@@ -1,14 +1,6 @@
 package NivelIntermediario;
 
-public class Uzumaki extends Ninja {
+public class Uzumaki {
 
-    @Override
-    public void EstrategiaDeBatalhaNinja() {
-        super.EstrategiaDeBatalhaNinja();
-    }
 
-    @Override
-    public void habilidadeEspecial() {
-        super.habilidadeEspecial();
-    }
 }

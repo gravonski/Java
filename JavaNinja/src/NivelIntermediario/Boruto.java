@@ -1,3 +1,4 @@
+/*
 package NivelIntermediario;
 
 public class Boruto implements HyugaUzumaki {
@@ -10,3 +11,4 @@ public class Boruto implements HyugaUzumaki {
         System.out.println("O Jougan está ativo!");
     }
 }
+*/

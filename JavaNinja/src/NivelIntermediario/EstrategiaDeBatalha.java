@@ -1,3 +1,4 @@
+/*
 package NivelIntermediario;
 
 public interface EstrategiaDeBatalha {
@@ -6,3 +7,4 @@ public interface EstrategiaDeBatalha {
 
 
 }
+*/

@@ -1,3 +1,4 @@
+/*
 package NivelIntermediario;
 
 public class Hatake extends Ninja implements SharinganInterface, AmbuInterface{
@@ -31,3 +32,4 @@ public class Hatake extends Ninja implements SharinganInterface, AmbuInterface{
     }
 
 }
+*/

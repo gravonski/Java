@@ -1,3 +1,4 @@
+/*
 package NivelIntermediario;
 
 public interface SharinganInterface {
@@ -8,3 +9,4 @@ public interface SharinganInterface {
 
     void inteligenciaDeCombate(int qi);
 }
+*/

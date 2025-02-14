@@ -2,54 +2,62 @@ package NivelIntermediario;
 
 public class Ninja {
 
-    //TODO: INCLUIR 2 NOVOS ATRIBUTOS:  numerosDeMissoesConcluidas & Rank
-    //TODO: RANK: Gennin, Chunnin, Jouninn, Hogake
+    private String nome;
+    private String aldeia;
+    private int idade;
+    private int numerosDeMissoesConcluidas;
+    private double altura = 1.80;
 
-    String nome;
-    String aldeia;
-    int idade;
-    int numerosDeMissoesConcluidas;
-    RankNinja rank;
-    final double altura = 1.80;
+    public Ninja() {
 
-    final public void metodoFinal() {
-        System.out.println("Esse é o método vindo da classe mãe");
     }
 
-    //TODO: Sobrecarregar o novo construtor com o novos atributos
-
-    public Ninja(String nome, String aldeia, int idade) {
+    public Ninja(String nome, String aldeia, int idade, int numerosDeMissoesConcluidas, double altura) {
         this.nome = nome;
         this.aldeia = aldeia;
         this.idade = idade;
-    }
-
-    public Ninja(String nome, String aldeia, int idade, int numerosDeMissoesConcluidas, RankNinja rank) {
-        this(nome, aldeia, idade);
         this.numerosDeMissoesConcluidas = numerosDeMissoesConcluidas;
-        this.rank = rank;
+        this.altura = altura;
     }
 
-    public void inteligenciaDeCombate(){
-        System.out.println("Meu nome é " + nome + " e essa é a minha Inteligência de Combate");
+    public String getNome() {
+        return nome;
     }
 
-    public void inteligenciaDeCombate(int qi){
-        if (qi >= 120) {
-            System.out.println("Meu nome é " + nome + " e eu sou um gênio em Inteligência de Combate, pois meu QI é de " + qi);
-        } else {
-            System.out.println("Meu nome é " + nome + " e Inteligência de Combate não é o meu forte, pois meu QI é de " + qi);
-        }
-
+    public void setNome(String nome) {
+        this.nome = nome;
     }
 
-    public void metodoSemOver() {
-        System.out.println("Hello, World!");
+    public String getAldeia() {
+        return aldeia;
     }
 
-    @Override
-    public String toString() {
-        return "Nome do Ninja: " + nome + ".   Venho da " + aldeia + " e tenho " + idade + " anos.";
+    public void setAldeia(String aldeia) {
+        this.aldeia = aldeia;
+    }
+
+    public int getIdade() {
+        return idade;
+    }
+
+    public void setIdade(int idade) {
+        this.idade = idade;
+    }
+
+    public int getNumerosDeMissoesConcluidas() {
+        return numerosDeMissoesConcluidas;
+    }
+
+    public void setNumerosDeMissoesConcluidas(int numerosDeMissoesConcluidas) {
+        this.numerosDeMissoesConcluidas = numerosDeMissoesConcluidas;
+    }
+
+    public double getAltura() {
+        return altura;
+    }
+
+    public void setAltura(double altura) {
+        this.altura = altura;
     }
 }
 

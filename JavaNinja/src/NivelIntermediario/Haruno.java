@@ -1,3 +1,4 @@
+/*
 package NivelIntermediario;
 
 public abstract class Haruno{
@@ -5,3 +6,4 @@ public abstract class Haruno{
         System.out.println("O poder de Cura foi ativado por ");
     }
 }
+*/

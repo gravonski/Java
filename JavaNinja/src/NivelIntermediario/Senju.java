@@ -1,4 +1,4 @@
-package NivelIntermediario;
+/*package NivelIntermediario;
 
 public class Senju extends Hogakes {
 
@@ -6,4 +6,4 @@ public class Senju extends Hogakes {
     public void sabedoriaHogake() {
         System.out.println("Você adquiriu sabedoria!");
     }
-}
+}*/

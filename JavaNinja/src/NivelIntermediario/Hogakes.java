@@ -1,3 +1,4 @@
+/*
 package NivelIntermediario;
 
 public abstract class Hogakes {
@@ -21,3 +22,4 @@ public abstract class Hogakes {
 
 
 }
+*/

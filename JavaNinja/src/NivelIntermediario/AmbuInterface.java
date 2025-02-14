@@ -1,3 +1,4 @@
+/*
 package NivelIntermediario;
 
 public interface AmbuInterface {
@@ -5,3 +6,4 @@ public interface AmbuInterface {
     void ninjaDeElite();
 
 }
+*/

@@ -10,6 +10,11 @@ public class Ninja {
     int idade;
     int numerosDeMissoesConcluidas;
     RankNinja rank;
+    final double altura = 1.80;
+
+    final public void metodoFinal() {
+        System.out.println("Esse é o método vindo da classe mãe");
+    }
 
     //TODO: Sobrecarregar o novo construtor com o novos atributos
 

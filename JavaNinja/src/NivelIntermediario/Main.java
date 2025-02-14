@@ -7,6 +7,10 @@ public class Main {
         sasuke.sharinganAtivado();
         sasuke.metodoSemOver();
         System.out.println(sasuke);
+        System.out.println("==========");
+        sasuke.metodoFinal();
+        System.out.println(sasuke.altura);
+        System.out.println("==========");
 
         Uchiha madara = new Uchiha("Madara Uchiha", "Aldeia da Névoa" , 58, 9, RankNinja.KAGE);
         madara.sharinganAtivado();

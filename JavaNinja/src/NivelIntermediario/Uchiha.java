@@ -1,6 +1,16 @@
 package NivelIntermediario;
 
-public class Uchiha extends Ninja {
+public class Uchiha extends Ninja implements SharinganInterface {
+
+    /*
+    * Metodo:
+    * Implementado pela interface SharinganInterface
+    */
+
+    @Override
+    public void sharinganAtivado() {
+        System.out.println("Sharingan Ativo");
+    }
 
     public Uchiha() {
     }

@@ -3,24 +3,11 @@ package NivelIntermediario;
 public class Main {
     public static void main(String[] args) {
 
-        BolsaGenerica<Object> bolsaNinja = new BolsaGenerica<>();
-        bolsaNinja.adicionarEquipamentosGenericos("Kunai");
-        bolsaNinja.adicionarEquipamentosGenericos("Shuriken");
-        bolsaNinja.adicionarEquipamentosGenericos("Pergaminho");
-        bolsaNinja.mostrarEquipamentos();
-        
+        Ninja cadastro = new Ninja("Naruto", "Naruto@gmail.com", 999999);
+        System.out.println(cadastro);
 
-        /*
-        EquipamentosNinja kunai = new EquipamentosNinja("Kunai");
-        EquipamentosNinja shuriken = new EquipamentosNinja("Shuriken");
-        EquipamentosNinja pergaminhos = new EquipamentosNinja("Pergaminho");
 
-        BolsaGenerica<EquipamentosNinja> bolsaNinja = new BolsaGenerica<>();
-        bolsaNinja.adicionarEquipamentosGenericos(kunai);
-        bolsaNinja.adicionarEquipamentosGenericos(shuriken);
-        bolsaNinja.adicionarEquipamentosGenericos(pergaminhos);
-        bolsaNinja.mostrarEquipamentos();
-*/
-
+        NinjaRecords cadastroRecord = new NinjaRecords("Sasuke Uchiha", "sasuke@gmail.com", 4888888);
+        System.out.println(cadastroRecord);
     }
 }

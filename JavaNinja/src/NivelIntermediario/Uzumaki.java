@@ -1,6 +1,7 @@
+/*
 package NivelIntermediario;
 
-public class Uzumaki extends Ninja {
+public class Uzumaki {
 
     public Uzumaki() {
     }
@@ -9,3 +10,4 @@ public class Uzumaki extends Ninja {
         super(nome, aldeia, idade, numerosDeMissoesConcluidas, altura);
     }
 }
+*/

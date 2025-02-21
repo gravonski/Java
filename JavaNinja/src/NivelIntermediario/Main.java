@@ -6,7 +6,7 @@ import java.util.*;
 
 public class Main {
     public static void main(String[] args) {
-        //Arrays
+        /*//Arrays
         System.out.println("---------------ARRAY-----------------");
         String[] ninjas = new String[3];
         ninjas[0] = "Naruto Uzumaki";
@@ -40,6 +40,14 @@ public class Main {
         System.out.println("Ninjas na fila: " + ninjasQueue);
         ninjasQueue.poll();
         System.out.println("Fila com Pool: " + ninjasQueue);
-        System.out.println("Topo da Fila: " + ninjasQueue.peek());
+        System.out.println("Topo da Fila: " + ninjasQueue.peek());*/
+
+        LinkedList <String> ninjasLinked = new LinkedList<>();
+        ninjasLinked.add("Naruto");
+        ninjasLinked.add("Sasuke");
+        ninjasLinked.add("Sakura");
+
+        System.out.println(ninjasLinked);
+
     }
 }

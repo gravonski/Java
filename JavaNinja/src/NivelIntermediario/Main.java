@@ -46,7 +46,7 @@ public class Main {
         ninjasLinked.add("Naruto");
         ninjasLinked.add("Sasuke");
         ninjasLinked.add("Sakura");
-
+        ninjasLinked.add(2, "Julião Balestin");
         System.out.println(ninjasLinked);
 
     }

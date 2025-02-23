@@ -1,53 +1,41 @@
 package NivelIntermediario;
 
-import NivelBasico.Arrays.Array;
-
-import java.util.*;
+import java.util.LinkedList;
 
 public class Main {
     public static void main(String[] args) {
-        /*//Arrays
-        System.out.println("---------------ARRAY-----------------");
-        String[] ninjas = new String[3];
-        ninjas[0] = "Naruto Uzumaki";
-        ninjas[1] = "Sasuke Uchiha";
-        ninjas[2] = "Sakura Haruno";
-        System.out.println(ninjas[2]);
-        //Listas
-        System.out.println("---------------LISTAS-----------------");
-        List <String> ninjasList = new ArrayList<>();
-        ninjasList.add("Naruto Uzumaki");
-        ninjasList.add("Sasuke Uchiha");
-        ninjasList.add("Sakura Haruno");
-        System.out.println(ninjasList);
-        //Stack
-        System.out.println("---------------STACK-----------------");
-        Stack <String> ninjasStack = new Stack<>();
-        ninjasStack.push("Sasuke Uchiha");
-        ninjasStack.push("Naruto Uzumaki");
-        ninjasStack.push("Sakura Haruno");
-        System.out.println("Stack completa: " + ninjasStack);
-        ninjasStack.pop();
-        System.out.println("Stack com Pop: " + ninjasStack);
-        System.out.println("Peek da Stack: " + ninjasStack.peek());
 
-        System.out.println("---------------QUEUE-----------------");
-        Queue <String> ninjasQueue = new LinkedList<>();
-        ninjasQueue.add("Naruto Uzumaki");
-        ninjasQueue.add("Sasuke Uchiha");
-        ninjasQueue.add("Sakura Haruno");
-        ninjasQueue.add("Kakashi Uchiha");
-        System.out.println("Ninjas na fila: " + ninjasQueue);
-        ninjasQueue.poll();
-        System.out.println("Fila com Pool: " + ninjasQueue);
-        System.out.println("Topo da Fila: " + ninjasQueue.peek());*/
 
-        LinkedList <String> ninjasLinked = new LinkedList<>();
-        ninjasLinked.add("Naruto");
-        ninjasLinked.add("Sasuke");
-        ninjasLinked.add("Sakura");
-        ninjasLinked.add(2, "Julião Balestin");
-        System.out.println(ninjasLinked);
+
+        //Adicionando os Ninjas
+        Ninja ninjaNaruto = new Ninja("Naruto Uzumaki", 19, "Aldeia da Folha");
+        Ninja ninjaSasuke = new Ninja("Sasuke Uchiha", 17, "Aldeia da Folha");
+        Ninja ninjaSakura = new Ninja("Sakura Haruno", 18, "Aldeia da Folha");
+        Ninja ninjaItachi = new Ninja("Itachi Uchiha", 21, "Aldeia da Folha");
+        Ninja ninjaHinata = new Ninja("Hinata Hyuga", 17, "Aldeia da Folha");
+        Ninja ninjaKakashi = new Ninja("Kakashi Hatake", 48, "Aldeia da Folha");
+        Ninja ninjaGaara = new Ninja("Gaara", 24, "Aldeia da Areia");
+        Ninja ninjaBoruto = new Ninja("Boruto", 9, "Aldeia da Areia");
+
+        //Adicionando os Ninjas na LinkedList
+        LinkedList<Ninja> ninjasLinkedList = new LinkedList<>();
+        ninjasLinkedList.add(ninjaNaruto);
+        ninjasLinkedList.add(ninjaSasuke);
+        ninjasLinkedList.add(ninjaSakura);
+        ninjasLinkedList.add(ninjaItachi);
+        ninjasLinkedList.add(ninjaHinata);
+        ninjasLinkedList.add(ninjaKakashi);
+        ninjasLinkedList.add(ninjaGaara);
+
+
+        System.out.println("---------------Listas de Ninjas---------------");
+
+        System.out.println(ninjasLinkedList.size());
+        for (int i = 0; i < ninjasLinkedList.size() ; i++) {
+            System.out.println(ninjasLinkedList.peek());
+            ninjasLinkedList.pop();
+        }
+
 
     }
 }

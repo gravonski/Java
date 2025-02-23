@@ -43,9 +43,7 @@ public class Ninja {
         return "Nome do Ninja: " + nome + " , Idade do Ninja: " + idade + " , Aldeia do Ninja: " + aldeia;
     }
 
-    public void lista() {
-        System.out.println("" + getNome());
-    }
+
 }
 
 

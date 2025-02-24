@@ -1,9 +1,6 @@
 package NivelIntermediario;
 
-import java.util.ArrayList;
-import java.util.HashSet;
-import java.util.List;
-import java.util.Set;
+import java.util.*;
 
 public class Main {
     public static void main(String[] args) {
@@ -14,7 +11,7 @@ public class Main {
         listaNinja.add("Sakura Haruno");
         listaNinja.add("Naruto Uzumaki");
 
-        Set <String> setNinjas = new HashSet<>();
+        Set <String> setNinjas = new LinkedHashSet<>();
         setNinjas.addAll(listaNinja);
 
 
